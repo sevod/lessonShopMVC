@@ -5,8 +5,9 @@
             return true;
         }
 
-        public function actionView(){
-            echo 'NewsController actionView / one new';
+        public function actionView($params){
+            echo '<br>' . $params[0];
+            echo '<br>' . $params[1];
             return true;
         }
     }
